@@ -1,12 +1,10 @@
 package com.hancai.pattern.factory;
 
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
 /**
  * @author diaohancai
  */
-@Slf4j
 public class FactoryTest {
 
     @Test
