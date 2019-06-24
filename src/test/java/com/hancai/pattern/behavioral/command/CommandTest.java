@@ -11,12 +11,18 @@ public class CommandTest {
 
     @Test
     public void TestCommand() {
+        // 命令执行者
         Staff diao = new Staff("刁汉财");
         Staff zhang = new Staff("张桥");
 
+        // 命令
+        Command workCommand = new WorkCommand();
+        Command haveARestCommand = new HaveARestCommand();
+
+        // 命令下达者
         Boss boss = new Boss();
-        boss.publishCommand(diao, new WorkCommand());
-        boss.publishCommand(zhang, new HaveARestCommand());
+        boss.publishCommand(diao, workCommand);
+        boss.publishCommand(zhang, haveARestCommand);
     }
 
 }
